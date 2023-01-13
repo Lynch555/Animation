@@ -1,0 +1,189 @@
+.header
+    padding: 34px 0
+    &__light
+        &::before
+            content: ''
+            background: url('../img/index/light.png') no-repeat
+            max-width: 1920px
+            width: 100%
+            min-height: 714px
+            background-size: cover
+            position: absolute
+            top: 0
+            left: 0
+.menu
+    &__logo
+        display: block
+        transition: .3s
+        position: relative
+        width: 148px
+        height: 35px
+        &:hover
+            .logo
+                &-text
+                    &--primary
+                        color: $blue 
+    &__wrapper
+        align-items: end
+        justify-content: space-between  
+    &__contacts
+        position: relative         
+.logo
+    &__image
+        position: relative           
+        width: 148px
+        height: 17px
+        overflow: hidden
+        color: white
+        font-size: 20px
+        // &::before
+        //     content: ''
+        //     position: absolute
+        //     top: 0
+        //     left: 16px
+        //     width: 16px
+        //     height: 9px
+        //     border: 4px solid $blue
+        //     border-radius: 180px 180px 0 0
+        //     border-bottom: 0
+        //     animation: circle1 10s linear infinite
+        //     box-shadow: inset 0 1px 3px rgba(102, 117, 247, 0.7)
+        // &::after
+        //     content: ''
+        //     position: absolute
+        //     bottom: 0
+        //     left: 47px
+        //     width: 16px
+        //     height: 9px
+        //     border: 4px solid $blue
+        //     border-radius: 0 0 180px 180px
+        //     border-top: 0
+        //     animation: circle2 8s linear infinite 
+        //     box-shadow: 0 2px 4px rgba(102, 117, 247, 0.7)           
+.logo
+    &-text            
+        &__size
+            font-size: 10px
+            padding-top: 7px
+            text-align: center
+        &--primary
+            color: rgba($light, 0.302)
+// @keyframes circle1
+//   0%,
+//   19.999%,
+//   22%,
+//   62.999%,
+//   64%,
+//   64.999%,
+//   70%,
+//   100%
+//     opacity: .99
+//     border: 4px solid $blue
+//     border-radius: 180px 180px 0 0
+//     border-bottom: 0
+//     box-shadow: inset 0 1px 3px rgba(102, 117, 247, 0.7)
+//   20%,
+//   21.999%,
+//   63%,
+//   63.999%,
+//   65%,
+//   69.999%
+//     opacity: 0.4
+//     box-shadow: none
+// @keyframes circle2
+//   0%,
+//   12%,
+//   18.999%,
+//   23%,
+//   31.999%,
+//   37%,
+//   44.999%,
+//   46%,
+//   49.999%,
+//   51%,
+//   58.999%,
+//   61%,
+//   68.999%,
+//   71%,
+//   85.999%,
+//   96%,
+//   100%
+//     opacity: 0.99
+//     box-shadow: 0 2px 4px rgba(102, 117, 247, 0.7)
+//   19%,
+//   22.99%,
+//   32%,
+//   36.999%,
+//   45%,
+//   45.999%,
+//   50%,
+//   50.99%,
+//   59%,
+//   60.999%,
+//   69%,
+//   70.999%,
+//   86%,
+//   95.999%
+//     opacity: 0.4
+//     box-shadow: none
+.nav
+    &-list
+        padding: 0
+        margin: 0
+        list-style-type: none
+        &__item
+            margin: 0 5px
+        &__link    
+            border: 1px solid rgba($light, .1)
+            padding: 10px 14px
+            color: $light
+            display: block
+            font-size: 14px
+            border-radius: 3px
+            position: relative
+            transition: .3s
+            &:hover
+                background-color: $blue
+                border: 1px solid rgba($light, 0)
+.contacts
+    align-items: flex-end
+    &-left
+        max-width: 220px
+        &__telegram
+            display: inline-block
+            vertical-align: middle
+        &__whatsapp
+            margin: 0 10px
+            display: inline-block
+            vertical-align: middle
+        &__phone
+            display: inline-block
+            vertical-align: middle
+        &__bottom
+            font-size: 13px
+            transition: .3s
+            color: rgba($light, .2)
+            margin: 5px 0 0
+            text-align: right
+            &:hover
+                color: $blue
+    &-right
+        &__email
+            color: $light
+            display: block
+        &__text
+            margin: 10px 0 0 auto
+            transition: .3s
+            color: rgba($light, .2)
+            font-size: 13px
+            border-bottom: 1px dotted transparent
+            width: 100px
+            text-align: right
+        &:hover
+            .contacts
+                &-right
+                    &__text
+                        color: $blue  
+                        border-bottom: 1px dotted $blue
+    &__indentation
+        margin-right: 50px              

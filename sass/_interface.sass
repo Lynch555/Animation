@@ -1,0 +1,61 @@
+.phone
+    font-size: 18px
+    font-weight: bold
+    color: $light
+.title
+    font-weight: 300
+    font-size: 46px
+    line-height: 55px
+    color: $light
+.text
+    font-weight: 300
+    font-size: 18px
+    color: rgba($light, .5)
+    line-height: 30px
+.button
+    font-size: 12px
+    font-weight: 300
+    transition: .3s
+    padding: 0 30px
+    line-height: 16px
+    &-animate
+        font-size: 16px
+        font-weight: 300
+        &__width
+            min-width: 293px
+            video
+                position: absolute
+                width: 293px
+                height: 70px
+                top: 0
+                left: 0
+                z-index: -1
+        &--primary
+            color: rgba($light, .7)
+            background-color: rgba($light, .4)
+            border: 1px solid rgba($light, .1)
+            box-shadow: 0px 15px 20px 0px rgba(112, 129, 248, 0.14)
+            &:hover
+    &__width
+        max-width: 233px
+    &--outline
+        color: $light
+        border: 1px solid rgba($light, .1)
+        background-color: transparent
+        &:hover
+            color: $barkText
+            background-color: $light
+            border: 1px solid $light
+.section
+    padding: 95px 0 105px            
+.section__shadow
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 143px
+        z-index: 20
+        background: url('../img/index/shadow.png') repeat          

@@ -1,0 +1,131 @@
+.progress-container {
+  position: relative;
+  z-index: 0;
+  width: 300px;
+  height: 200px;
+  background-color: inherit;
+  border-collapse: collapse;
+  transform: skewY(26deg);
+  top: 220px;
+  left: 200px;
+}
+
+  /* ---------------------
+  Vertical Bars
+----------------------*/
+
+.bar {
+  float: left;
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  height: 35%;
+  width: 40px;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* значения, которые нужно будет доработать */
+  background: rgba(248,80,50,1);
+}
+
+.bar:first-child {
+  left: 0%;
+}
+
+.bar:nth-child(2) {
+  left: 25%;
+}
+
+.bar:nth-child(3) {
+  left: 50%;
+}
+
+.bar:last-child {
+  left: 75%;
+}
+  
+.bar:before {
+  content: "";
+  position: absolute;
+  right: -25px;
+  bottom: 12px;
+  height: 100%;
+  width: 25px;
+  background-color: rgba(107,255,49,0.25);
+  -webkit-transform: skewY(-45deg);
+  -ms-transform: skewY(-45deg);
+  -moz-transform: skewY(-45deg);
+  -o-transform: skewY(-45deg);
+  transform: skewY(-45deg);
+  /* значения, которые нужно будет доработать */
+  background: rgba(73,155,234,1);}
+  
+.bar:after {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 12px;
+  width: 40px;
+  height: 25px;
+  -webkit-transform: skewX(-45deg);
+  -ms-transform: skewX(-45deg);
+  -moz-transform: skewX(-45deg);
+  -o-transform: skewX(-45deg);
+  transform: skewX(-45deg);
+  /* значения, которые нужно будет доработать */
+  background: rgba(98,125,77,1);
+}
+
+.animate-top-side {
+  position: absolute;
+  right: 40%;
+  top: 10%;
+}
+
+.animate-stack-manets {
+  position: relative;
+  left: 58%;
+  top: 85%;
+}
+
+.animate-maneta:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+.animate-maneta:nth-child(2) {
+  position: absolute;
+  bottom: 5px;
+  z-index: 1;
+}
+.animate-maneta:nth-child(3) {
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
+}
+.animate-maneta:nth-child(4) {
+  position: absolute;
+  bottom: 15px;
+  z-index: 3;
+}
+.animate-maneta:nth-child(5) {
+  position: absolute;
+  bottom: 20px;
+  z-index: 4;
+}
+.animate-maneta:nth-child(6) {
+  position: absolute;
+  bottom: 25px;
+  z-index: 5;
+}
+.animate-maneta:nth-child(7) {
+  position: absolute;
+  bottom: 30px;
+  z-index: 6;
+}
+.animate-maneta:nth-child(8) {
+  position: absolute;
+  bottom: 35px;
+  z-index: 7;
+}
